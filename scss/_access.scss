@@ -1,0 +1,40 @@
+.access {
+     background-image: url('image/bg.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding: 60px 3.4vw 110px;
+
+     &__head-logo {
+          text-align: center;
+     }
+
+     &__content {
+          display: flex;
+          align-items: center;
+          margin-top: 80px;
+     }
+
+     &__img-wrap {
+          width: 55.6%;
+          margin-right: 7.03389%;
+     }
+
+     &__title {
+          margin-top: 24px;
+          line-height: 2;
+
+          &:first-of-type {
+               margin-top: 0;
+          }
+     }
+
+     &__text {
+          margin-top: 24px;
+          line-height: 2;
+     }
+
+     &__map {
+          margin-top: 69px;
+          text-align: center;
+     }
+}

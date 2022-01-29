@@ -1,0 +1,84 @@
+.header {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 100;
+     transition: .4s;
+
+     &__wrap {
+          display: flex;
+          padding: 0 20px;
+          height: 80px;
+     }
+}
+
+.bg-color {
+     &--white {
+          background-color: #fff;
+     }
+}
+
+
+.header-logo {
+     margin: 20px 120px 0 0;
+     display: block;
+}
+
+.header-menu {
+     &__items {
+          display: flex;
+          margin-top: 32px;
+     }
+
+     &__item {
+          color: #fff;
+          font-weight: bold;
+          margin-right: 30px;
+
+          &:last-child {
+               margin-right: 0;
+          }
+     }
+
+     .item-color {
+          &--black {
+               color: #000;
+               font-size: 1rem;
+          }
+     }
+}
+
+.header-btn {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #978F10;
+     color: #fff;
+     width: 170px;
+     height: 54px;
+     margin: 13px 0 0 auto;
+
+     &::before {
+          display: inline-block;
+          margin-right: 8px;
+          content: url('image/calender.png');
+
+     }
+
+}
+
+/*ハンバーガーアイコンがクリックされたらメニュー表示*/
+.open.header-menu {
+     opacity: 1;
+     visibility: visible;
+}
+
+/*ヘッダーの背景色がスクロールすると変わる*/
+.change-header-color {
+     background-color: #fff;
+}
+
+.change-menu-color {
+     color: #000;
+}

@@ -1,0 +1,97 @@
+.main {
+     &__bg-img {
+          position: relative;
+          opacity: 0;
+          background-image: url('image/mainbg01.jpg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 100vw;
+          height: 100vh;
+          z-index: -2;
+          overflow: hidden;
+          animation: bg-img 24s infinite ease-in;
+     }
+
+     @keyframes bg-img {
+          0% {
+               opacity: 0;
+               background-image: url('image/mainbg01.jpg');
+               transform: none;
+          }
+
+          30% {
+               background-image: url('image/mainbg01.jpg');
+               opacity: 1;
+               transform: scale(1.2);
+
+          }
+
+          50% {
+               background-image: url("image/mainbg02.jpg");
+               opacity: 1;
+               transform: scale(1.2);
+          }
+
+          70% {
+               background-image: url("image/mainbg03.jpg");
+               opacity: 1;
+               transform: none;
+          }
+
+          100% {
+               background-image: url("image/mainbg03.jpg");
+               opacity: 0;
+               transform: scale(1.2);
+          }
+     }
+
+
+     &__title {
+          top: 50%;
+          left: 70%;
+          font-size: 2.125rem;
+          color: #fff;
+          position: relative;
+          line-height: 2.4;
+          letter-spacing: 0.625rem;
+          transform: translate(-50%, -50%);
+     }
+
+}
+
+.main-sub-page {
+     &__bg-img {
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 100vw;
+          height: 580px;
+          overflow: hidden;
+          position: relative;
+     }
+
+     &__title {
+          top: 50%;
+          left: 50%;
+          position: absolute;
+          font-size: 2.125rem;
+          color: #fff;
+          font-weight: bold;
+          line-height: 1.2;
+          transform: translate(-50%, -50%);
+     }
+}
+
+
+.room-img {
+     background-image: url('image/oheya-header.png');
+}
+
+.food-img {
+     background-image: url('image/menu-header.png');
+}
+
+.spa-img {
+     background-image: url('image/onsen-header.png');
+}

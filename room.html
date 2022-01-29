@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+
+    <!-- Primary Meta Tags -->
+    <title>お部屋 - 石井花壇 | 温海温泉旅館【公式サイト】</title>
+    <meta
+      name="title"
+      content="お部屋 - 石井花壇 | 温海温泉旅館【公式サイト】"
+    />
+    <meta
+      name="description"
+      content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
+      伝統的「和」の息づく空間で、至極のひとときをお過ごしください。"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ishii-kadan.xyz/" />
+    <meta
+      property="og:title"
+      content="お部屋 - 石井花壇 | 温海温泉旅館【公式サイト】"
+    />
+    <meta
+      property="og:description"
+      content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
+      伝統的「和」の息づく空間で、至極のひとときをお過ごしください。"
+    />
+    <meta
+      property="og:image"
+      content="https://ishii-kadan.xyz/image/mainbg01.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ishii-kadan.xyz/" />
+    <meta
+      property="twitter:title"
+      content="お部屋 - 石井花壇 | 温海温泉旅館【公式サイト】"
+    />
+    <meta
+      property="twitter:description"
+      content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
+      伝統的「和」の息づく空間で、至極のひとときをお過ごしください。"
+    />
+    <meta
+      property="twitter:image"
+      content="https://ishii-kadan.xyz/image/mainbg01.jpg"
+    />
+
+    <link rel="icon" href="image/桜の無料素材6.svg" type="image/svg+xml" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <!-- リセットCSSを先に読み込ませる -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <!-- メイン背景画像 -->
+      <main class="main-sub-page__bg-img room-img">
+        <!-- ここからヘッダー -->
+        <header class="header bg-color--white">
+          <div class="header__wrap">
+            <a class="header-logo" href="/">
+              <img
+                class="img header-logo-img"
+                src="image/sub-header-logo.png"
+                alt="タイトルロゴ"
+                data-image="image/sub-header-logo.png"
+                data-imageundo="image/sub-header-logo.png"
+              />
+            </a>
+            <nav id="header-menu" class="header-menu">
+              <ul class="header-menu__items">
+                <li class="header-menu__item item-color--black">
+                  <a class="header-menu__link" href="room.html">お部屋</a>
+                </li>
+                <li class="header-menu__item item-color--black">
+                  <a class="header-menu__link" href="food.html">お料理</a>
+                </li>
+                <li class="header-menu__item item-color--black">
+                  <a class="header-menu__link" href="spa.html">温泉</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="header-btn">宿泊予約</button>
+            <!-- ハンバーガーアイコン -->
+            <button id="hamburger" class="hamburger">
+              <div class="hamburger__bar hamburger__bar--color"></div>
+              <div class="hamburger__bar hamburger__bar--color"></div>
+              <div class="hamburger__bar hamburger__bar--color"></div>
+            </button>
+            <!-- ここからモーダルエリア -->
+            <section id="modal" class="modal">
+              <div id="modal__mask" class="modal__mask"></div>
+              <div class="modal__modal-wrap">
+                <form action="" class="modal-form">
+                  <h2 class="modal-form__title">宿泊予約</h2>
+                  <dl class="modal-form__body modal-form--top">
+                    <dt>
+                      <label for="name">お名前</label>
+                    </dt>
+                    <dd class="modal-form__text">
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="例：石井正悟"
+                      />
+                    </dd>
+                  </dl>
+                  <dl class="modal-form__body">
+                    <dt>
+                      <label for="e-mail">メールアドレス</label>
+                    </dt>
+                    <dd class="modal-form__text">
+                      <input
+                        type="text"
+                        name="e-mail"
+                        id="e-mail"
+                        placeholder="例：Example@example.com"
+                      />
+                    </dd>
+                  </dl>
+                  <dl class="modal-form__body">
+                    <dt>
+                      <label for="select-plan"
+                        >ご希望プラン（空いているプランのみ表示されます）</label
+                      >
+                    </dt>
+                    <dd class="modal-form__text">
+                      <select class="select-plan" id="select-plan">
+                        <option value="choice-plan" selected>
+                          プランを選択してください
+                        </option>
+                        <option value="luxury-plan">
+                          【期間限定】海辺の四季旬彩、贅沢美味懐石プラン
+                        </option>
+                        <option value="special-plan">
+                          平日に優雅に楽しむ、特別宿泊プラン
+                        </option>
+                        <option value="family-plan">
+                          絶景貸切露天と個室会席を満喫できるファミリープラン
+                        </option>
+                      </select>
+                    </dd>
+                  </dl>
+                  <dl class="modal-form__body">
+                    <dt>
+                      <label for="select-date">日時選択</label>
+                    </dt>
+                    <dd class="modal-form__text">
+                      <input
+                        class="flatpickr"
+                        type="text"
+                        placeholder="日時を選択してください"
+                        readonly="readonly"
+                      />
+                    </dd>
+                  </dl>
+                  <input
+                    type="submit"
+                    class="modal-form__submit-btn"
+                    value="送信する"
+                  />
+                  <div id="close-modal" class="close-modal"></div>
+                </form>
+              </div>
+            </section>
+          </div>
+        </header>
+        <!-- ここまでヘッダー -->
+
+        <h1 class="main-sub-page__title">お部屋</h1>
+      </main>
+      <!-- メイン背景画像ここまで -->
+
+      <!-- パンくずリスト -->
+      <div class="breadcrumb section-wrap">
+        <ul class="breadcrumb__menu">
+          <li class="breadcrumb__list"><a href="/">トップ</a></li>
+          <li class="breadcrumb__list">お部屋</li>
+        </ul>
+      </div>
+      <!-- パンくずりすとリストここまで -->
+
+      <!-- お部屋についての紹介 -->
+      <section class="sub-about">
+        <div class="section-wrap">
+          <p class="sub-about__text animationTarget">
+            創業より受け継がれてきた石井花壇の和の造り<br />
+            温海の雄大な絶景を堪能していただけるように設計された客室<br />
+            ゆるやかに流れ行く時間に身を委ねて
+          </p>
+        </div>
+      </section>
+      <!-- お部屋についての紹介ここまで -->
+
+      　　　　<!-- お部屋の内容セクション -->
+      <section class="sub-service">
+        <div class="section-wrap">
+          <!-- 温泉付き客室 -->
+          <div class="sub-service__box">
+            <div class="sub-service__img-wrap animationTarget">
+              <img class="img" src="image/oheya01.jpg" alt="温泉付き客室" />
+            </div>
+            <div class="sub-service__body animationTarget">
+              <h2 class="sub-service__head">温泉付き客室</h2>
+              <p class="sub-service__text">
+                温海の源泉かけ流し露天風呂付き客室になります。<br />
+                あなただけの上質な安らぎのひとときを。
+              </p>
+              <ul class="sub-service__notes">
+                <li>＊部屋数に限りがございます。</li>
+                <li>
+                  ＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 庭園付き客室 -->
+          <div class="sub-service__box sub-service__box--reverse">
+            <div class="sub-service__img-wrap animationTarget">
+              <img class="img" src="image/oheya02.jpg" alt="庭園付き客室" />
+            </div>
+            <div
+              class="
+                sub-service__body sub-service__body--reverse
+                animationTarget
+              "
+            >
+              <h2 class="sub-service__head">庭園付き客室</h2>
+              <p class="sub-service__text">
+                庭園付きの客室になります。<br />
+                お庭を見ながら、ほっとするひとときをお過ごしください。
+              </p>
+              <ul class="sub-service__notes">
+                <li>＊お庭は複数のお客様と囲む形になります。</li>
+                <li>＊部屋数に限りがございます。</li>
+                <li>
+                  ＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 一般客室 -->
+          <div class="sub-service__box">
+            <div class="sub-service__img-wrap animationTarget">
+              <img class="img" src="image/oheya03.jpg" alt="一般客室" />
+            </div>
+            <div class="sub-service__body animationTarget">
+              <h2 class="sub-service__head">一般客室</h2>
+              <p class="sub-service__text">
+                最もベーシックな客室になります。伝統の中にモダンさを取り入れた<br />
+                内装となっており、とても過ごしやすくしていただけます。
+              </p>
+              <ul class="sub-service__notes">
+                <li>＊全室お部屋より日本海を望むことができます。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- セクションラップここまで -->
+      </section>
+      <!-- お部屋の内容セクションここまで -->
+
+      <!-- ここからフッター -->
+      <footer class="footer">
+        <div class="footer__wrap">
+          <ul class="footer__menu animationTarget">
+            <li class="footer__list vertical-writing">
+              <a class="footer__link" href="spa.html">温泉</a>
+            </li>
+            <li class="footer__list vertical-writing">
+              <a class="footer__link" href="food.html">お料理</a>
+            </li>
+            <li class="footer__list vertical-writing">
+              <a class="footer__link" href="room.html">お部屋</a>
+            </li>
+          </ul>
+          <div class="footer__company-wrap">
+            <a href="/">
+              <img
+                class="footer__logo-img animationTarget"
+                src="image/footer-logo.png"
+                alt="タイトルロゴ"
+              />
+            </a>
+            <div class="footer__company animationTarget">
+              <p class="footer__comany-postal">
+                〒000-0000
+                <span class="footer__company--right company--spacing"
+                  >山形県鶴岡市xxxxxxxxxxx</span
+                >
+              </p>
+              <p class="footer__company-tel">
+                TEL.000-0000-0000
+                <span class="footer__company--right">FAX.00-0000-0000</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <small>Copyright © 石井花壇 All Rights Reserved.</small>
+        </div>
+      </footer>
+      <!-- ここまでフッター -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+    <script src="js/main.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "HOME",
+            "item": "https://ishii-kadan.xyz/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "お部屋",
+            "item": "https://ishii-kadan.xyz/room.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "お料理",
+            "item": "https://ishii-kadan.xyz/food.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "温泉",
+            "item": "https://ishii-kadan.xyz/spa.html"
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>

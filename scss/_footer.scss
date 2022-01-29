@@ -1,0 +1,56 @@
+.footer {
+     background-image: url('image/bg3.png');
+     background-repeat: no-repeat;
+     padding-top: 64px;
+
+     &__menu {
+          display: flex;
+          justify-content: center;
+     }
+
+     &__list {
+          font-size: 1.125rem;
+          margin-right: 34px;
+
+          &:last-child {
+               margin-right: 0px;
+          }
+     }
+
+     &__link {
+
+          letter-spacing: 0.7em;
+     }
+
+     &__company-wrap {
+          margin-top: 96px;
+          text-align: center;
+     }
+
+     &__company {
+          margin-top: 72px;
+     }
+
+     &__company--right {
+          margin-left: 21px;
+     }
+
+     .company--spacing {
+          letter-spacing: 2.88px;
+
+     }
+
+     &__company-tel {
+          margin-top: 23px;
+     }
+
+     &__copyright {
+          margin-top: 38px;
+          color: #fff;
+          background-color: #000;
+          text-align: center;
+          padding: 23px 0 25px;
+          line-height: 2;
+          font-size: 0.75rem;
+     }
+}

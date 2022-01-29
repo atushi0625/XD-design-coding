@@ -1,0 +1,124 @@
+.breadcrumb {
+     margin: 36px 3.4vw 0;
+
+     &__menu {
+          display: flex;
+
+     }
+
+     &__list {
+          &:last-of-type::before {
+               content: ">";
+               margin: 0 10px;
+          }
+     }
+}
+
+.sub-about {
+     margin: 98px 3.4vw 0;
+
+     &__text {
+          text-align: center;
+          line-height: 2;
+     }
+}
+
+.sub-service {
+     padding: 78px 3.4vw 150px;
+
+     &__box {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          position: relative;
+          margin-bottom: 84px;
+          height: 437px;
+
+          &:last-of-type {
+               margin-bottom: 0;
+          }
+     }
+
+     &__box--reverse {
+          flex-direction: row-reverse;
+     }
+
+     &__img-wrap {
+          height: 68.5%;
+          width: 44.49%;
+     }
+
+     &__body {
+          background-image: url('image/bg.png');
+          position: absolute;
+          z-index: -1;
+          padding: 60px 0 0 20%;
+          top: 13%;
+          right: 0;
+          width: 68.9%;
+          height: 381px;
+          box-sizing: border-box;
+     }
+
+     &__body--reverse {
+          padding: 60px 20% 0 5%;
+          left: 0;
+     }
+
+     &__head {
+          font-size: 1.5rem;
+          line-height: 1.3;
+          font-weight: bold;
+     }
+
+     &__text {
+          font-size: 1rem;
+          line-height: 2;
+          margin-top: 40px;
+     }
+
+     &__notes {
+          font-size: 0.875rem;
+          line-height: 1.5;
+          margin-top: 40px;
+     }
+}
+
+.spa-efficacy {
+     padding: 0 20px 85px;
+
+     &__wrap {
+          border-top: 1px solid #e7e7e7;
+          border-bottom: 1px solid #e7e7e7;
+
+     }
+
+     &__head {
+          padding-top: 102px;
+          font-size: 1.625rem;
+          text-align: center;
+     }
+}
+
+.spa-efficacy-data {
+     width: 100%;
+     max-width: 880px;
+     margin: 70px auto 85px;
+
+     &__content {
+          border-top: 1px solid #e7e7e7;
+          border-bottom: 1px solid #e7e7e7;
+     }
+
+     &__title {
+          padding: 17px 0;
+          width: 25%;
+          font-weight: normal;
+          font-size: 0.9375rem;
+     }
+
+     &__text {
+          padding: 17px 0;
+          font-size: 0.9375rem;
+     }
+}

@@ -1,0 +1,58 @@
+.hamburger {
+     width: 70px;
+     height: 70px;
+     position: relative;
+     display: none;
+
+     &__bar {
+          position: absolute;
+          height: 3px;
+          width: 30px;
+          background-color: #fff;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: .2s;
+
+          &:nth-of-type(1) {
+               transform: translate(-50%, -10px);
+          }
+
+          &:nth-of-type(3) {
+               transform: translate(-50%, 10px);
+
+          }
+
+          &--color {
+               background-color: #000;
+          }
+     }
+
+}
+
+/*ハンバーガーアイコンをクリックしたら発火*/
+.is-active {
+     .hamburger__bar:nth-of-type(1) {
+          transform: rotate(45deg) translate(-50%, 0);
+          transform-origin: 0 50%;
+
+
+     }
+
+     .hamburger__bar:nth-of-type(2) {
+          opacity: 0;
+     }
+
+
+     .hamburger__bar:nth-of-type(3) {
+          transform: rotate(-45deg) translate(-50%, 0);
+          transform-origin: 0 50%;
+     }
+
+}
+
+/*ヘッダーがスクロールしたら発火する*/
+
+.change-bar-color {
+     background-color: #000;
+}

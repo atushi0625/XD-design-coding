@@ -1,0 +1,52 @@
+body {
+     font-family: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”,
+          “ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”,
+          “ＭＳ Ｐ明朝”, “MS PMincho”, serif;
+
+     color: #000;
+}
+
+.hero {
+     overflow: hidden;
+}
+
+.section-wrap {
+     max-width: 1180px;
+     width: 100%;
+     margin: 0 auto;
+}
+
+.img {
+     width: 100%;
+     object-fit: cover;
+     vertical-align: bottom;
+
+}
+
+.vertical-writing {
+     -ms-writing-mode: tb-rl;
+     writing-mode: vertical-rl;
+     text-orientation: upright;
+}
+
+.logo-img {
+     width: 40px;
+     height: 40px;
+     margin-bottom: 20px;
+}
+
+.head {
+     font-size: 2.25rem;
+}
+
+/*フワッとアニメーション*/
+.animationTarget {
+     opacity: 0;
+     transition: 1s;
+     transform: translateY(50px);
+}
+
+.show {
+     opacity: 1;
+     transform: none;
+}

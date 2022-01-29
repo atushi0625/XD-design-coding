@@ -1,0 +1,65 @@
+.service {
+
+     &__wrap {
+          padding: 106px 0 78px;
+          margin: 0 auto;
+     }
+
+     &__box {
+          display: flex;
+          margin-bottom: 122px;
+
+          &:last-child {
+               margin-bottom: 0;
+          }
+     }
+
+
+     &__img-wrap {
+          width: 55.3%;
+          margin-right: 7.2%;
+     }
+
+     &__body {
+          margin-top: 32px;
+     }
+
+
+     &__title {
+          font-size: 2.25rem;
+          line-height: 1.7;
+          margin-bottom: 75px;
+     }
+
+     &__text {
+          font-size: 1rem;
+          line-height: 2;
+          margin-bottom: 75px;
+     }
+
+     &__btn {
+          width: 200px;
+          text-align: center;
+          border: 1px solid #707070;
+     }
+
+     &__btn-link {
+          color: #000;
+          font-size: 1rem;
+          display: block;
+          padding: 20px 0;
+     }
+
+
+     &__box--reverse {
+          flex-direction: row-reverse;
+     }
+
+     &__body--reverce {
+          margin-right: 10%;
+     }
+
+     &__img-wrap--reverse {
+          margin-right: 0;
+     }
+}
