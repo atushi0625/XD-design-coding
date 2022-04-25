@@ -2,7 +2,7 @@
      &__bg-img {
           position: relative;
           opacity: 0;
-          background-image: url('image/mainbg01.jpg');
+          // background-image: url('image/mainbg01.jpg');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
@@ -10,41 +10,41 @@
           height: 100vh;
           z-index: -2;
           overflow: hidden;
-          animation: bg-img 24s infinite ease-in;
+          animation: bg-img 26s infinite ease-in;
+          @keyframes bg-img {
+               0% {
+                    opacity: 0;
+                    background-image: url('image/mainbg01.jpg');
+                    transform: none;
+               }
+     
+               30% {
+                    background-image: url('image/mainbg01.jpg');
+                    opacity: 1;
+                    transform: scale(1.2);
+     
+               }
+     
+               50% {
+                    background-image: url("image/mainbg02.jpg");
+                    opacity: 1;
+                    transform: scale(1.2);
+               }
+     
+               70% {
+                    background-image: url("image/mainbg03.jpg");
+                    opacity: 1;
+                    transform: none;
+               }
+     
+               100% {
+                    background-image: url("image/mainbg03.jpg");
+                    opacity: 0;
+                    transform: scale(1.2);
+               }
+          }
      }
 
-     @keyframes bg-img {
-          0% {
-               opacity: 0;
-               background-image: url('image/mainbg01.jpg');
-               transform: none;
-          }
-
-          30% {
-               background-image: url('image/mainbg01.jpg');
-               opacity: 1;
-               transform: scale(1.2);
-
-          }
-
-          50% {
-               background-image: url("image/mainbg02.jpg");
-               opacity: 1;
-               transform: scale(1.2);
-          }
-
-          70% {
-               background-image: url("image/mainbg03.jpg");
-               opacity: 1;
-               transform: none;
-          }
-
-          100% {
-               background-image: url("image/mainbg03.jpg");
-               opacity: 0;
-               transform: scale(1.2);
-          }
-     }
 
 
      &__title {
