@@ -2,7 +2,6 @@
      &__bg-img {
           position: relative;
           opacity: 0;
-          // background-image: url('image/mainbg01.jpg');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
@@ -11,32 +10,38 @@
           z-index: -2;
           overflow: hidden;
           animation: bg-img 26s infinite ease-in;
+          backface-visibility: hidden;
+
+
           @keyframes bg-img {
                0% {
                     opacity: 0;
                     background-image: url('image/mainbg01.jpg');
                     transform: none;
+                    backface-visibility: hidden;
                }
-     
+
+
                30% {
                     background-image: url('image/mainbg01.jpg');
                     opacity: 1;
                     transform: scale(1.2);
-     
+                    backface-visibility: hidden;
                }
-     
+
                50% {
                     background-image: url("image/mainbg02.jpg");
                     opacity: 1;
                     transform: scale(1.2);
+                    backface-visibility: hidden;
                }
-     
+
                70% {
                     background-image: url("image/mainbg03.jpg");
                     opacity: 1;
                     transform: none;
                }
-     
+
                100% {
                     background-image: url("image/mainbg03.jpg");
                     opacity: 0;
@@ -55,7 +60,7 @@
           position: relative;
           line-height: 2.4;
           letter-spacing: 0.625rem;
-          transform: translate(-50%, -50%);
+          transform: translate(-50%, -40%);
      }
 
 }
@@ -66,13 +71,13 @@
           background-position: center;
           background-repeat: no-repeat;
           width: 100vw;
-          height: 580px;
+          height: calc(580px + 80px);
           overflow: hidden;
           position: relative;
      }
 
      &__title {
-          top: 50%;
+          top: calc(50% + 40px);
           left: 50%;
           position: absolute;
           font-size: 2.125rem;

@@ -1,6 +1,6 @@
 $pc: 1024px; // PC
 $tab: 768px; // タブレット
-$sp: 375px; // スマホ
+$sp: 414px; // スマホ
 
 @mixin pc {
      @media (max-width: ($pc)) {
@@ -73,6 +73,10 @@ button.hamburger {
                text-align: center;
                padding: 10px;
 
+          }
+
+          &__link {
+               color: #000;
           }
 
      }
@@ -232,14 +236,21 @@ button.hamburger {
 
 /*メイン*/
 .main {
+     @include pc {
+          &__title {
+               font-size: 3.32031vw;
+          }
+     }
+
      @include tab {
           &__title {
-               font-size: 2rem;
+               font-size: 4.42708vw;
           }
      }
 
      @include sp {
           &__title {
+               font-size: 2rem;
                left: 50%;
           }
      }
@@ -424,25 +435,22 @@ section {
 
 }
 
+/*セクション全体の下余白*/
+section.sub-service {
+     @include tab {
+          padding-bottom: 40px;
+     }
+}
+
 .main-sub-page {
 
-     /*セクション全体の下余白*/
-     section.sub-service {
+     /*下層ページのメイン画像*/
+
+     &__bg-img {
           @include tab {
-               padding-bottom: 40px;
-          }
-     }
-
-     /*下層ページのメインタイトル*/
-     @include tab {
-          &__title {
-               top: 50%;
-               left: 50%;
-          }
-
-          &__bg-img {
                height: calc(100vh - 80px);
-          }
 
+          }
      }
+
 }
