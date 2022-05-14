@@ -1,24 +1,31 @@
+/*セクション２access*/
+
 .access {
+     /*背景画像全体*/
      background-image: url('image/bg.png');
      background-repeat: no-repeat;
      background-size: cover;
      padding: 60px 3.4vw 110px;
 
+     /*見出しロゴ*/
      &__head-logo {
           text-align: center;
      }
 
+     /*コンテンツ全体*/
      &__content {
           display: flex;
           align-items: center;
           margin-top: 80px;
      }
 
+     /*コンテンツ画像全体*/
      &__img-wrap {
           width: 55.6%;
           margin-right: 7.03389%;
      }
 
+     /*住所、TEL/FAX、営業時間*/
      &__title {
           margin-top: 24px;
           line-height: 2;
@@ -33,6 +40,7 @@
           line-height: 2;
      }
 
+     /*Googleマップ*/
      &__map {
           margin-top: 69px;
           text-align: center;

@@ -1,17 +1,22 @@
+/*セクション１about*/
+
 .about {
 
+     /*背景画像全体*/
      &__wrap {
           background-image: url('image/bg.png');
           background-repeat: no-repeat;
           padding: 149px 3.4vw 76px;
      }
 
+     /*テキスト全体の幅*/
      &__text-inner {
           display: flex;
           flex-direction: row-reverse;
           justify-content: center;
      }
 
+     /*タイトル*/
      &__title {
           font-weight: bold;
           font-size: 1.75rem;
@@ -20,6 +25,7 @@
           text-indent: -3em;
      }
 
+     /*テキスト*/
      &__text {
           font-size: 1rem;
           line-height: 2;
@@ -27,6 +33,7 @@
           margin-right: 10%;
      }
 
+     /*石井花壇名前*/
      &__name {
           text-align: right;
           font-size: 1.375rem;
